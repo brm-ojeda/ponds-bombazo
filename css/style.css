@@ -12,6 +12,8 @@
 
 .btn-contador:hover{
 	background-color: #d8142e;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .cont-contador{
