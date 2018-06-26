@@ -1,0 +1,111 @@
+
+
+.btn-contador{
+    background-color: #f93853;
+    border: none;
+    color: #ffffff;
+    float: left;
+    font-size: 1.7rem;
+    padding: 0.5rem 4rem;
+    transition: all ease-in-out .3s;
+}
+
+.btn-contador:hover{
+	background-color: #d8142e;
+}
+
+.cont-contador{
+	background: linear-gradient(7deg, #a4b2bd, #e1e8ea);
+	bottom: 0;
+	padding: 1.5rem 0;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+.cont-cta{
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 22rem;
+}
+
+.cont-titulo{
+    background-color: #fff;
+    color: #f93852;
+    float: left;
+    font-size: 2.2rem;
+    margin: 1.2rem 0 0 1.5rem;
+    padding: .2rem;
+    width: 14.5rem;
+}
+
+#clockdiv{
+	color: #424242;
+    float: left;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin: 0 .7%;
+    width: 24rem;
+}
+
+#clockdiv > div{
+	background: #676767;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 4px 4px 3px 4px;
+    margin: 0 0.5%
+}
+
+#clockdiv div > span{
+	background: #ffffff;
+	border-radius: 3px;
+	display: inline-block;
+	padding: .5rem 1.2rem;
+}
+
+.days{
+	padding: .5rem 1.6rem !important;
+}
+
+.smalltext{
+	padding-top: 3px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.text-dto{
+	color: #5d5d5d;
+    float: left;
+    font-size: 1.6rem;
+}
+
+.text-dto strong{
+	color: #f93853;
+	font-size: 1.8rem;
+}
+
+/*@media (max-width: 1024px){
+	.cont-titulo{
+		width: 14.5%;
+	    font-size: 2rem;
+	}
+
+	#clockdiv{
+		width: 28%;
+	    margin: 0 2%;
+	}
+
+	.cont-cta{
+	    width: 27%;
+	}
+
+}*/
+
+@media (max-width: 768px){
+	.cont-contador{
+		display: none;
+	}
+}
+
