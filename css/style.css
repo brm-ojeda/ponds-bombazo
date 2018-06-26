@@ -18,36 +18,38 @@
 
 .cont-contador{
 	background: linear-gradient(7deg, #a4b2bd, #eef2f3);
-	bottom: 0;
-	padding: 1.5rem 0;
-	position: fixed;
-	text-align: center;
-	width: 100%;
+    bottom: 0;
+    display: block;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
 }
 
 .cont-cta{
-	display: inline-block;
-	float: left;
-	position: relative;
-	width: 22rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 22rem;
 }
 
 .cont-titulo{
     color: #f93852;
-    float: left;
+    display: inline-block;
     font-size: 2.2rem;
-    margin: 1.2rem 0 0 1.5rem;
+    margin: 1.5rem 0 0 1.5rem;
     padding: .2rem;
+    vertical-align: top;
     width: 14.5rem;
 }
 
 #clockdiv{
 	color: #424242;
-    float: left;
+    display: inline-block;
     font-family: sans-serif;
     font-size: 1.6rem;
     font-weight: 100;
     margin: 0 .7%;
+    text-align: center;
     width: 24rem;
 }
 
@@ -116,7 +118,6 @@
 	}
 
 	#clockdiv{
-		float: none;
 		width: 100%;
 	    margin: 0;
 	}
@@ -128,19 +129,18 @@
 	}
 
 	.cont-titulo{
-		float: none;
-		width: 100%;
 	    margin: 1rem 0 1.5rem 0;
+	    text-align: center;
+	    width: 100%;
 	}
 
 	.cont-cta{
-		float: none;
-		width: 100%;
 	    margin-top: .7rem;
+	    text-align: center;
+	    width: 100%;
 	}
 
 	.text-dto{
-		float: none;
 		width: 100%;
 	    font-size: 1.8rem;
 	}
