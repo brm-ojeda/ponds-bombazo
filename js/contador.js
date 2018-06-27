@@ -52,11 +52,11 @@ var altoPagina = document.body.offsetHeight,
     altoViewport = window.innerHeight,
     altoFooter  = document.querySelector('footer').offsetHeight;
 
-
 window.addEventListener('scroll', function(){
     if (((window.scrollY + altoViewport) - (altoPagina - altoFooter)) > 0) {
         document.querySelector('.cont-contador').classList.add('cont-contador-relative');
-    }else {
+    }
+    else {
         document.querySelector('.cont-contador').classList.remove('cont-contador-relative');
     }
 });
