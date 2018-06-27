@@ -39,7 +39,7 @@
     color: #f93852;
     display: inline-block;
     font-size: 2.2rem;
-    margin: 1.3rem 0 0 1.5rem;
+    margin: 1.2rem 0 0 1.5rem;
     padding: .2rem;
     vertical-align: top;
     width: 14.5rem;
@@ -129,6 +129,7 @@
 	}
 
 }
+
 @media (max-width: 768px){
 	.cont-contador{
 		position: relative;
