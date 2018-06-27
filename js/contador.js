@@ -1,9 +1,12 @@
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  //operadores ternarios para manejar el numero negativo
+  //siempre que la variable t sea menor a 0, se va imprimir 0
+  var seconds = t <= 0 ? 00 : Math.floor((t / 1000) % 60);
+  var minutes = t <= 0 ? 00 : Math.floor((t / 1000 / 60) % 60);
+  var hours = t <= 0 ? 00 : Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = t <= 0 ? 0 : Math.floor(t / (1000 * 60 * 60 * 24)); 
+
   return {
     'total': t,
     'days': days,
@@ -37,6 +40,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+// var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse('June 30 2018 23:59:59') );
 
 initializeClock('clockdiv', deadline);

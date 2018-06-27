@@ -6,7 +6,7 @@
     color: #ffffff;
     float: left;
     font-size: 1.7rem;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 5.4rem;
     transition: all ease-in-out .3s;
 }
 
@@ -20,9 +20,12 @@
 	background: linear-gradient(7deg, #a4b2bd, #eef2f3);
     bottom: 0;
     display: block;
+    left: 0;
     padding: 1.5rem 0;
     position: fixed;
+    text-align: left;
     width: 100%;
+    z-index: 2;
 }
 
 .cont-cta{
@@ -36,7 +39,7 @@
     color: #f93852;
     display: inline-block;
     font-size: 2.2rem;
-    margin: 1.5rem 0 0 1.5rem;
+    margin: 1.3rem 0 0 1.5rem;
     padding: .2rem;
     vertical-align: top;
     width: 14.5rem;
@@ -95,22 +98,36 @@
     padding: .7rem 2.5rem;
 }
 
-/*@media (max-width: 1024px){
+@media (max-width: 950px){
 	.cont-titulo{
-		width: 14.5%;
-	    font-size: 2rem;
+		display: block;
+		margin: 0 0 .7rem 1.3rem;
+		text-align: center;
+		width: 22.5rem;
+		font-size: 2rem;
 	}
 
 	#clockdiv{
-		width: 28%;
-	    margin: 0 2%;
+		margin: 0 0 0 .7%;
+	}
+
+	.btn-contador{
+		padding: 0.5rem 4.4rem;
 	}
 
 	.cont-cta{
-	    width: 27%;
+	    width: 19rem;
 	}
 
-}*/
+	.text-dto {
+	    font-size: 1.4rem;
+	}
+
+	.titulo-cont {
+	    padding: .5rem 6.7rem;
+	}
+
+}
 
 @media (max-width: 768px){
 	.cont-contador{
@@ -146,7 +163,6 @@
 	}
 
 	.titulo-cont {
-	    padding: 0.7rem 17%;
+	    padding: 0.7rem 22%;
 	}
 }
-
