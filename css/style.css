@@ -1,4 +1,8 @@
 
+body{
+	height: 1500px;
+}
+
 
 .btn-contador{
     background-color: #f93853;
@@ -28,11 +32,17 @@
     z-index: 5;
 }
 
+/*Scroll Down*/
+.cont-contador-relative{
+	position: relative;
+	text-align: center;
+}
+
 .cont-cta{
     display: inline-block;
     position: relative;
     vertical-align: top;
-    width: 22rem;
+    width: 23.5rem;
 }
 
 .cont-titulo{
@@ -113,11 +123,11 @@
 	}
 
 	.btn-contador{
-		padding: 0.5rem 4.4rem;
+		padding: 0.5rem 5rem;
 	}
 
 	.cont-cta{
-	    width: 19rem;
+	    width: 22rem;
 	}
 
 	.text-dto {

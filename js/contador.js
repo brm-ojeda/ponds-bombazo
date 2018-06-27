@@ -40,7 +40,23 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
+
 // var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
 var deadline = new Date(Date.parse('June 30 2018 23:59:59') );
 
 initializeClock('clockdiv', deadline);
+
+//Scroll Down
+//*** Evento scroll para cambiar posición de fixed ***
+var altoPagina = document.body.offsetHeight,
+    altoViewport = window.innerHeight,
+    altoFooter  = document.querySelector('footer').offsetHeight;
+
+
+window.addEventListener('scroll', function(){
+    if (((window.scrollY + altoViewport) - (altoPagina - altoFooter)) > 0) {
+        document.querySelector('.cont-contador').classList.add('cont-contador-relative');
+    }else {
+        document.querySelector('.cont-contador').classList.remove('cont-contador-relative');
+    }
+});
