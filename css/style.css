@@ -171,3 +171,21 @@
 	    padding: 0.7rem 22%;
 	}
 }
+
+/* Portrait IPAD PRO EN VERTICAL*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+
+	.cont-contador{
+	background: linear-gradient(7deg, #a4b2bd, #eef2f3);
+    bottom: 0;
+    display: block;
+    left: 0;
+    padding: 1.5rem 0;
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    z-index: 5;
+}
+
+}
+
