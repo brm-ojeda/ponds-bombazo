@@ -112,6 +112,13 @@
 		font-size: 2rem;
 	}
 
+	.cont-titulo-responsive{
+		display: inline-block;
+	    vertical-align: top;
+	    font-size: 2.2rem;
+	    margin: 1.2rem 0 0 0;
+	}
+
 	#clockdiv{
 		margin: 0 0 0 .7%;
 	}

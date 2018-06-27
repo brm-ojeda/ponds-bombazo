@@ -55,8 +55,10 @@ var altoPagina = document.body.offsetHeight,
 window.addEventListener('scroll', function(){
     if (((window.scrollY + altoViewport) - (altoPagina - altoFooter)) > 0) {
         document.querySelector('.cont-contador').classList.add('cont-contador-relative');
+        document.querySelector('.cont-titulo').classList.add('cont-titulo-responsive');
     }
     else {
         document.querySelector('.cont-contador').classList.remove('cont-contador-relative');
+        document.querySelector('.cont-titulo').classList.remove('cont-titulo-responsive');
     }
 });
