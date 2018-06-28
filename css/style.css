@@ -26,7 +26,7 @@
     z-index: 5;
 }
 
-/*Scroll Down*/
+/*Scroll Down Desktop*/
 .cont-contador-relative{
 	position: relative;
 	text-align: center;
@@ -103,6 +103,7 @@
     padding: .7rem 2.5rem;
 }
 
+/*Tablet*/
 @media (max-width: 959px){
 	.cont-titulo{
 		display: block;
@@ -142,6 +143,7 @@
 
 }
 
+/*Mobil*/
 @media (max-width: 768px){
 	.cont-contador{
 		position: relative;
